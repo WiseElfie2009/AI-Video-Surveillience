@@ -7,7 +7,7 @@ video=createVideo("video.mp4");
 }
 
 function setup(){
-    canvas=createCanvas(600,450);
+    canvas=createCanvas(600,350);
     canvas.center();
     video.hide();
 }
@@ -36,7 +36,7 @@ else{
 }
 
 function draw(){
-    image(video,0,0,600,450);
+    image(video,0,0,600,350);
 
     if(status!=""){
         objectDetector.detect(video,gotResult);
